@@ -1,0 +1,85 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  background-color: #19082b;
+  margin: 20px;
+  align-items: center;
+}
+/* .clear {
+  clear: both;
+  content: ""
+} */
+
+.game {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.mines-info {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin-bottom: 10px;
+  color: white;
+  background: #2d1646;
+  height: 50px;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.game-info {
+  font: 20px "Georgia", Futura, sans-serif;
+  margin-bottom: 10px;
+  color: white;
+  background: #2d1646;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  align-content: center;
+}
+
+.cell {
+  font: 20px "Century Gothic", Futura, sans-serif;
+  font-family: Georgia;
+  font-style: bold;
+  background: #f9e4bb;
+  border: 1px solid #613669;
+  float: left;
+  line-height: 34px;
+  height: 50px;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  margin-top: 5px;
+  padding: 0; 
+  text-align: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 5px;;
+  color: #280f42;
+  align-items: center;
+  cursor: pointer;
+  align-content: center;
+}
+.cell:hover{
+  background: #10021f;
+  color: white;
+  transition: linear 0.2s;
+}
+
+.cell:focus {
+  outline: none;
+}
+
+.hidden {
+  background: #613669;
+}
+
+.is-flag,
+.is-mine {
+  color: #fc543c;
+}

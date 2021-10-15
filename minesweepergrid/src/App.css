@@ -1,0 +1,189 @@
+body {
+  font: 14px "Georgia", Futura, sans-serif;
+  background: linear-gradient(-45deg, #613669, #f6d48b, #a34e6e);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: 20px;
+  align-items: center;
+  min-width: auto;
+}
+.clear {
+  clear: both;
+  content: ""
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board-container{
+  width: calc(100% - 50px);
+  min-height: 500px;;
+}
+
+.game {
+
+  min-width: 500px;
+  min-height: 10px;
+  margin-bottom: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  text-justify: auto;
+  justify-content: center;
+}
+
+.game-info {
+  font: 19px "Georgia", Futura, sans-serif;
+  margin-bottom: 10px;
+  color: white;
+  background: #2d1646;
+  height: 80px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  border-radius: 5px;
+  align-content: left;
+}
+
+.player{
+  font: 30px, "Georgia", Futura, sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #280f42;
+  display: flex;
+  justify-content: center;
+}
+
+.info{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: contents;
+  align-content: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.cell {
+  font: 22px "Georgia", Futura, sans-serif;
+  font-family: Georgia;
+  font-style: bold;
+  background: #f9e4bb;
+  border: 1px solid #613669;
+  float: left;
+  line-height: 34px;
+  height: 50px;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-top: 3px;
+  padding: 0; 
+  text-align: center;
+  width: 50px;
+  color: #280f42;
+  cursor: pointer;
+}
+.cell:hover{
+  background: #10021f;
+  color: white;
+  transition: linear 0.2s;
+}
+
+.cell:focus {
+  outline: none;
+}
+.hidden {
+  background: #613669;
+}
+.is-flag,
+.is-mine {
+  color: #a34e6e;
+  font-weight: bold;
+}
+
+
+.leaderboard, .legend{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 87px;
+  left: 1000px;
+}
+
+.legend{
+  left: 150px;
+}
+
+.leaderboard-container, .legend-container{
+  background-color: white;
+  border-radius: 5px;
+}
+.leaderboard-title, .legend-title{
+  width: 200px;
+  background-color: white;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.leaderboard-content, .legend-content{
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.leaderboard-player, .legend-item{
+  width: 100%;
+  height: 40px;
+  background-color: #f6d48b;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1px;
+}
+.leaderboard-player span {
+  margin-left: 10%;
+}
+.legend-item span{
+  width: 50px;
+}
+
+.leaderboard-player img{
+  float: right; 
+}
+
+.leaderboard-player:hover{
+  background: transparent;
+  transition: linear 0.2s;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
